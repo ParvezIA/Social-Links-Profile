@@ -1,3 +1,4 @@
+/* Defualt colors*/ 
 :root {
     
 --Green: hsl(75, 94%, 57%);
@@ -10,5 +11,106 @@
 
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: var(--Grey-900); }
+/*inbuild styleing from frontend mentor*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--White);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/*Code starts here*/
+
+body {
+    background-color: var(--Grey-900);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main {
+    background-color: var(--Grey-800);
+    width: 20em;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+}
+
+img {
+    border-radius: 10rem;
+    width: 100px; 
+    height: 100px;
+}
+
+h2 {
+    margin: 1em 0 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--White);
+}
+
+h5 {
+    margin: 1em 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--Green);
+}
+
+p {
+    margin: 1em 0;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--White);
+}
+
+a.links {
+    margin-top: 1em; 
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: var(--Grey-700);
+    color: var(--White);
+    width: 20em;
+    height: 4em;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.4s;
+}
+
+a.links:hover {
+    background-color: var(--Green);
+    color: var(--Grey-700);
+}
+
+/* media queary stars here*/
+
+@media screen and (max-width: 375px) {
+    img {
+        width: 88px;
+        height: 88px;
+    }
+  main {
+    margin-top: 5em;
+    width: 18em;
+    padding: 20px 0;
+  }
+
+  a.links {
+    width: 16em;
+    height: 3em;
+    
+  }
+}
